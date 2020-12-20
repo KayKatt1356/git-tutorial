@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Campfire Code</title>
+<style>
+
+body{
+background-color:white;
+border:20px solid black;
+padding:20px;
+margin:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 style="font-family:Arial;color:black;text-align:center">Campfire</h2>
+
+<p><h4 style="font-family:Arial;color:black">
+background(0);
+<br>size(500,500);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//moon
+<br>fill(255, 255, 204);
+<br>ellipse(250,100,250,250);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//logs
+<br>rectMode(CENTER);
+<br>fill(102,51,0);
+<br>rect(300,350,300,100);
+<br>rect(100,375,300,100);
+<br>rect(350,370,300,100);
+<br>fill(139,69,19);
+<br>rect(250,400,300,100);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//Fire
+<br>//red and orange
+<br>fill(255,153,51);
+<br>stroke(255,0,0);
+<br>strokeWeight(10);
+<br>ellipse(250,250,200,200);
+<br>quad(200,100,250,250,150,150,160,260);
+<br>triangle(250,50,300,250,200,250);
+<br>quad(300,50,250,290,350,150,340,260);
+<br>noStroke();
+<br>ellipse(250,250,190,190);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//yellow
+<br>fill(255,255,0);
+<br>ellipse(250,270,150,150);
+<br>triangle(160,130,180,250,250,260);
+<br>triangle(220,100,270,250,200,260);
+<br>triangle(250,250,275,100,300,260);
+<br>triangle(335,130,280,250,315,280);
+<br>triangle(140,230,220,250,190,300);
+<br>triangle(350,230,320,250,320,280);
+</h4></p>
+
+</body>
+</html>
