@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Igglybuff Code</title>
+<style>
+
+body{
+background-color:white;
+border:20px solid black;
+padding:20px;
+margin:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 style="font-family:Arial;color:black;text-align:center">Igglybuff</h2>
+
+<p><h4 style="font-family:Arial;color:black">
+size(800, 800);
+<br>background(135, 206, 250);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//tree trunk
+<br>fill(139,69,19);
+<br>strokeWeight(5);
+<br>rect(600,0,200,650);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//lines
+  <br>for(int x=620;x<=720;x+=20)
+<br>line(x,0,x,650);
+<br>fill(160,82,45);
+<br>ellipse(720,150,50,100);
+<br>ellipse(720,150,30,80);
+<br>ellipse(720,150,10,60);
+<br>fill(139,69,19);
+  <br>for(int y=740;y<=800;y+=20)
+<br>line(y,0,y,650);
+<br>strokeWeight(3);
+   <br>for(int z=610;z<=790;z+=20)
+<br>line(z,0,z,610);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//grass
+<br>fill(0,250,154);
+<br>noStroke();
+<br>rect(0,600,800,500);
+<br>triangle(100,550,75,610,125,610);
+<br>triangle(120,520,110,610,175,610);
+<br>triangle(630,400,610,610,650,610);
+<br>triangle(650,450,650,610,670,610);
+<br>triangle(770,480,750,610,800,610);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//body
+<br>fill(255, 225, 255);
+<br>stroke(0);
+<br>strokeWeight(3);
+<br>ellipse(400,400,300,300);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//eyes
+<br>fill(220, 20, 60, 190);
+<br>//underneath, red part
+<br>ellipse(320,370,80,80); 
+<br>ellipse(475,365,85,85);
+<br>fill(0);
+<br>//black part
+<br>ellipse(320,370,50,50);  
+<br>ellipse(475,365,50,50);
+<br>noStroke();
+<br>fill(255,150);
+<br>//white shine
+<br>ellipse(308,350,30,30);  
+<br>ellipse(456,347,30,30);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//mouth
+<br>noFill();
+<br>stroke(0);
+<br>strokeWeight(2);
+<br>arc(360,460,40,20,0,PI);
+<br>arc(400,460,40,20,0,PI);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//head puffs
+<br>fill(255, 225, 255);
+<br>ellipse (400, 225, 100, 100);
+<br>ellipse(320, 250, 100, 100);
+<br>ellipse(480, 250, 100, 100);
+<br>noStroke();
+<br>ellipse (400, 300, 200, 50);
+<br>ellipse (400, 280, 100, 100);
+<br>//swirl
+<br>stroke(0);
+<br>arc  (400, 300, 50, 50, PI/2, 3*PI/2);
+<br>arc (400, 310, 35, 30, 3*PI/2, 5*PI/2);
+<br>arc (400, 303, 15, 15, 0, 3*PI/2);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//hands
+<br>fill(255, 225, 255);
+<br>arc(257,440,100,50,PI/3,3*PI/2);
+<br>arc(530,430,100,50,3*PI/2,8*PI/3);
+<br>//feet
+<br>arc(330,532,80,120,0,5*PI/4);
+<br>arc(490,505,140,70,3*PI/2,8*PI/3);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//grass tuft
+<br>fill(0,250,154);
+<br>noStroke();
+<br>triangle(330,532,310,610,350,610);
+</h4></p>
+
+</body>
+</html>
