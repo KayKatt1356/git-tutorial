@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-
-=======
-Hellow
->>>>>>> new-branch
