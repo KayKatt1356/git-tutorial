@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Yin Yang Code</title>
+<style>
+
+body{
+background-color:white;
+border:20px solid black;
+padding:20px;
+margin:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 style="font-family:Arial;color:black;text-align:center">Yin Yang</h2>
+
+<p><h4 style="font-family:Arial;color:black">
+size(400,400);
+<br>fill(255);
+<br>rect(0,0,200,400);
+<br>fill(0);
+<br>rect(200,0,200,400);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//left side
+<br>fill(0);
+<br>arc(200,200,400,400,PI/2,3*PI/2);
+<br>//right side
+<br>fill(255);
+<br>arc(200,200,400,400,3*PI/2,2*PI);
+<br>arc(200,200,400,400,0,PI/2);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//circles=curves
+<br>fill(0);
+<br>ellipse(200,100,200,200);
+<br>noStroke();
+<br>fill(255);
+<br>ellipse(200,300,200,200);
+<br>//inner circles
+<br>ellipse(200,100,100,100);
+<br>fill(0);
+<br>ellipse(200,300,100,100);
+</h4></p>
+
+</body>
+</html>
