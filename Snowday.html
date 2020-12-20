@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Snowday Code</title>
+<style>
+
+body{
+background-color:white;
+border:20px solid black;
+padding:20px;
+margin:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 style="font-family:Arial;color:black;text-align:center">Snowday!</h2>
+
+<p><h4 style="font-family:Arial;color:black">
+int x=400;
+<br>int y=400;
+<br>void setup(){
+  <br>background(240,248,255);
+  <br>size(800,800);
+  <br>noStroke();
+  <br>println("Snowday!");
+  <br>println("Move with arrow keys.");
+<br>}
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+void draw(){
+   <br>background(240,248,255);
+<br>//thunderclouds, left to right
+   <br>fill(211,211,211);
+   <br>ellipse(50,40,100,50);
+   <br>fill(192,192,192);
+   <br>ellipse(200,100,150,100);
+   <br>fill(211,211,211);
+   <br>ellipse(250,110,200,50);
+   <br>fill(112,128,144);
+   <br>ellipse(500,120,260,140);
+   <br>ellipse(550,90,150,180);
+   <br>fill(128,128,128);
+   <br>ellipse(700,100,200,70);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+// tree
+  <br>fill(139,69,19);
+   quad(600,300,650,300,700,800,500,800);
+   fill(176,224,230);
+   ellipse(600,300,200,200);
+   ellipse(500,300,100,100);
+   ellipse(750,300,250,250);
+   ellipse(500,300,200,200);
+   ellipse(651,400,100,100);
+   ellipse(600,200,200,200);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//ground
+   <br>fill(255);
+   <br>ellipse(400,800,800,400);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//face
+   <br>fill(255,255,0);
+   <br>ellipse(x,y,100,100);
+   <br>fill(0);
+   <br>ellipse(x-20,y-20,20,20);
+   <br>ellipse(x+20,y-20,20,20);
+   <br>fill(255,0,0);
+   <br>rectMode(CENTER);
+   <br>rect(x,y+20,50,40);
+   <br>fill(0,0,205);
+   <br>arc(x,y-50,90,100,PI,2*PI);
+   <br>ellipse(x,y-45,100,30);
+   <br>fill(0);
+   <br>ellipse(x,y-100,30,30);
+   <br>fill(34,139,34);
+   <br>rect(x,y+50,110,50);
+   <br>rect(x+20,y+70,50,100);
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+//movements
+  <br>if(keyPressed){
+   <br>if (y >=0){
+    <br>if(keyCode==UP){
+       <br>fill(255,255,0);
+       <br>ellipse(x,y,100,100);
+       <br>fill(0);
+       <br>ellipse(x-20,y-20,20,20);
+       <br>ellipse(x+20,y-20,20,20);
+       <br>fill(255,0,0);
+       <br>rectMode(CENTER);
+       <br>rect(x,y+20,50,40);
+       <br>fill(0,0,205);
+       <br>arc(x,y-50,90,100,PI,2*PI);
+       <br>ellipse(x,y-45,100,30);
+       <br>fill(0);
+       <br>ellipse(x,y-100,30,30);
+       <br>fill(34,139,34);
+       <br>rect(x,y+50,110,50);
+       <br>rect(x+20,y+70,50,100);
+       <br>y-=7;
+        <br>if(y<0)
+          <br>x-=7;
+       <br>}
+     <br>}
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black"> 
+  if (x >= 0)
+   <br>if(keyCode==LEFT){
+     <br>fill(255,255,0);
+     <br>ellipse(x,y,100,100);
+     <br>fill(0);
+     <br>ellipse(x-20,y-20,20,20);
+     <br>ellipse(x+20,y-20,20,20);
+     <br>fill(255,0,0);
+     <br>rectMode(CENTER);
+     <br>rect(x,y+20,50,40);
+     <br>fill(0,0,205);
+     <br>arc(x,y-50,90,100,PI,2*PI);
+     <br>ellipse(x,y-45,100,30);
+     <br>fill(0);
+     <br>ellipse(x,y-100,30,30);
+     <br>fill(34,139,34);
+     <br>rect(x,y+50,110,50);
+     <br>rect(x+20,y+70,50,100);
+     <br>x -=7;
+       <br>if(x<0)
+         <br>y-=7;
+      <br>}
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+  if (y <= 800)
+   <br>if(keyCode==DOWN){
+     <br>fill(255,255,0);
+     <br>ellipse(x,y,100,100);
+     <br>fill(0);
+     <br>ellipse(x-20,y-20,20,20);
+     <br>ellipse(x+20,y-20,20,20);
+     <br>fill(255,0,0);
+     <br>rectMode(CENTER);
+     <br>rect(x,y+20,50,40);
+     <br>fill(0,0,205);
+     <br>arc(x,y-50,90,100,PI,2*PI);
+     <br>ellipse(x,y-45,100,30);
+     <br>fill(0);
+     <br>ellipse(x,y-100,30,30);
+     <br>fill(34,139,34);
+     <br>rect(x,y+50,110,50);
+     <br>rect(x+20,y+70,50,100);
+     <br>y +=7;
+      <br>if(y>800)
+        <br>x+=7;
+       <br>}
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">
+   if (x <= 800)
+    <br>if(keyCode==RIGHT){
+     <br>fill(255,255,0);
+     <br>ellipse(x,y,100,100);
+     <br>fill(0);
+     <br>ellipse(x-20,y-20,20,20);
+     <br>ellipse(x+20,y-20,20,20);
+     <br>fill(255,0,0);
+     <br>rectMode(CENTER);
+     <br>rect(x,y+20,50,40);
+     <br>fill(0,0,205);
+     <br>arc(x,y-50,90,100,PI,2*PI);
+     <br>ellipse(x,y-45,100,30);
+     <br>fill(0);
+     <br>ellipse(x,y-100,30,30);
+     <br>fill(34,139,34);
+     <br>rect(x,y+50,110,50);
+     <br>rect(x+20,y+70,50,100);
+     <br>x +=7;
+        <br>if(x>800)
+          <br>y+=7;
+      <br>}//to if(keyCode==RIGHT)
+  <br>}//to if(keyPressed)
+</h4></p>
+
+<p><h4 style="font-family:Arial;color:black">  
+//snowstorm
+<br>int randX = (int) random(0, 800);
+<br>int randY = (int) random(0, 800);
+<br>fill(255);
+<br>ellipse(randX,randY,30,30);
+<br>}//void draw
+</h4></p>
+</body>
+</html>
